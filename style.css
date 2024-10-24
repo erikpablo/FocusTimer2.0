@@ -1,0 +1,70 @@
+.flex {
+    display: flex;
+}
+
+.buttonColor {
+    color: var(--bg-button-color);
+}
+
+/* auxiliares */
+
+button {
+    background-color: transparent;
+    border: 0;
+
+    cursor: pointer;
+    font-size: 5.4rem;
+    align-items: center;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --bg-button-color: #02799D;
+}
+
+body {
+    font-size: 1.6rem;
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    font-family: 'roboto', sans-serif;
+}
+
+.app {
+    gap: 19.2rem;
+    align-items: center;
+}
+
+.timer {
+    font-size: 12.6rem;
+    font-weight: 500;
+}
+
+.controls {
+    margin-top: 3rem;
+    gap: 3.7rem;
+}
+
+.controls button:hover {
+    color: var(--bg-button-color);
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle {
+    display: none;
+}
+
+.themes {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.2rem;
+}
