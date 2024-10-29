@@ -18,5 +18,6 @@ svgs.forEach(svg => {
     svgIcons[1].setAttribute('fill', 'white')
 
     selectedSVG = svgIcons
+
   })
 })
