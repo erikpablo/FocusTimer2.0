@@ -1,7 +1,8 @@
-import { themes } from "./elements.js"
+import { controls } from "./elements.js"
 
-export function registerThemes() {
-    themes.addEventListener('click', (event) => {
-        console.log(event.target)
+export function registerControls() {
+    controls.addEventListener('click', (event) => {
+        let action = event.target.dataset
+        console.log(action)
     })
 }

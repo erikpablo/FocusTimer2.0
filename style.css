@@ -8,15 +8,19 @@
 
 .forest {
     background: url(./images/forest.jpg) no-repeat center / cover;
-  }
+}
   
-  .rain {
-    background-color: #b3d1ff;
-  }
+.rain {
+    background: url(./images/rain.jpg) no-repeat center / cover;
+}
   
-  .cafeteria {
-    background-color: #ffe6cc;
-  }
+.cafeteria {
+    background: url(./images/cafeteria.jpg) no-repeat center / cover;
+}
+
+.fireplace {
+    background: url(./images/fireplace.webp) no-repeat center / cover;
+}
   
 
 /* auxiliares */
@@ -58,8 +62,14 @@ body {
 }
 
 .timerButton {
-    backdrop-filter: blur(1px);
-    border-radius: 2rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1px );
+    -webkit-backdrop-filter: blur( 3px );
+    border-radius: 1rem;
+
+    padding: 2rem;
+    color: #fff;
 }
 
 .timer {
@@ -70,6 +80,10 @@ body {
 .controls {
     margin-top: 3rem;
     gap: 3.7rem;
+}
+
+.controls button {
+    color: #fff;
 }
 
 .controls button:hover {
@@ -87,3 +101,12 @@ html:not(.running) .ph-pause-circle {
     gap: 3.2rem;
 }
 
+.themes button {
+    opacity: 0.5;
+
+    transition: opacity 0.5s ease;
+}
+
+.themes button:hover {
+    opacity: 1;
+}
