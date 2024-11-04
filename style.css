@@ -2,10 +2,6 @@
     display: flex;
 }
 
-.buttonColor {
-    color: var(--bg-button-color);
-}
-
 .forest {
     background: url(./images/forest.jpg) no-repeat center / cover;
 }
@@ -84,6 +80,10 @@ body {
 
 .controls button {
     color: #fff;
+}
+
+.controls .ph-pause-circle {
+    color: var(--bg-button-color);
 }
 
 .controls button:hover {
